@@ -1,0 +1,207 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: #f9f9f9;
+}
+
+.header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    height: 50px;
+}
+
+.headerRight {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profileImage {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.arrowDown {
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dropdownCard {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 0;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+}
+
+.dropdownCardVisible {
+    display: block;
+}
+
+.cardOption {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.cardOption:hover {
+    background-color: #f1f1f1;
+}
+
+.sidebar {
+    background-color: #003366;
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navItem {
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+.navItem:hover {
+    background-color: #00509e;
+}
+
+.mainContent {
+    margin-left: 220px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.searchBar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding: 5px 10px;
+}
+
+.postagens {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cardPostagem {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.cardPostagem:hover {
+    transform: scale(1.02);
+}
+
+.cardHeader {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.postProfessorFoto {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cardContent {
+    margin-bottom: 15px;
+}
+
+.cardButtonsContainer {
+    display: flex;
+    gap: 10px;
+}
+
+.cardButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Reduzindo o tamanho da imagem da postagem */
+.postImage {
+    width: 100%;
+    max-width: 400px; /* Ajuste o valor conforme necessário */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.comentariosChat {
+    margin-top: 20px;
+}
+
+.comentarioInput textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.comentarioInput button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
